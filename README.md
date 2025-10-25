@@ -80,14 +80,32 @@
 
 ## 구현할 기능 목록
 
--   [ ] 입력과 출력
+-   [x] 입력과 출력
     -   <code>@woowacourse/mission-utils</code>에서 제공하는 <code>Console API</code>의<code>Console.readLineAsync()</code>, <code>Console.print()</code>사용
--   [ ] 각 자동차별 Random 값 추출
+-   [x] 각 자동차별 Random 값 추출
     -   <code>@woowacourse/mission-utils</code>에서 제공하는 <code>Random API</code>의<code>Random.pickNumberInRange()</code>사용
     -   0에서 9사이의 무작위 정수
--   [ ] 차수별 실행 결과 출력
+-   [x] 차수별 실행 결과 출력
     -   무작위 값이 4이상인 경우 전진, '-' 추가
--   [ ] 우승자 안내 문구 출력
+-   [x] 우승자 안내 문구 출력
     -   우승자가 여러 명인 경우 쉼표(,)로 구분
--   [ ] Error 출력
+-   [x] Error 출력
     -   잘못된 값을 입력할 경우 "[ERROR]"로 시작하는 메시지와 함께 Error를 발생시킨 후 애플리케이션 종료
+-   [x] Jest를 이용하여 테스트
+    -   입력과 실행 결과 예시 비교
+
+##
+
+## 배운 점
+
+1. **폴더 구조 설계**
+    - 기능별로 파일과 폴더를 나누는 방법 고민
+    - <code>utils</code>, <code>constants</code> 등 목적에 맞는 폴더명으로 구조화
+2. **함수 단위로 기능 분리**
+    - 기능 하나하나를 별도의 함수로 구현
+    - 각 함수의 역할이 명확하도록 작명
+3. **배열 및 객체**
+    - <code>map</code>으로 객체 생성 및 배열변환
+    - <code>forEach</code>로 배열 순회하며 작업 수행
+4. **테스트 코드**
+    - Jest를 사용하여 테스트 코드 작성
