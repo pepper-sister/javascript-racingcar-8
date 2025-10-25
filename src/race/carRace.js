@@ -1,6 +1,6 @@
 import { Console } from '@woowacourse/mission-utils';
 import moveCar from './moveCar.js';
-import printRoundResult from '../utils/printFunction/printRoundResult.js';
+import printRoundResult from '../print/printRoundResult.js';
 
 export default async function carRace(carArray, tryCount) {
     const race = carArray.map((name) => ({

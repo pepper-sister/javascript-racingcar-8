@@ -1,5 +1,5 @@
 import userInput from './utils/userInput.js';
-import carRace from './utils/carRace.js';
+import carRace from './race/carRace.js';
 
 class App {
     async run() {

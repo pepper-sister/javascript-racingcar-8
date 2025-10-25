@@ -1,4 +1,4 @@
-import getRandomNumber from './getRandomNumber.js';
+import getRandomNumber from '../utils/getRandomNumber.js';
 
 export default function moveCar(car) {
     const isForward = getRandomNumber();
