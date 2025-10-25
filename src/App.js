@@ -1,12 +1,8 @@
-import getCarArray from './utils/getCarArray.js';
-import getTryCount from './utils/getTryCount.js';
-import getRandomNumber from './utils/getRandomNumber.js';
+import userInput from './utils/userInput.js';
 
 class App {
     async run() {
-        const carArray = await getCarArray();
-        const tryCount = await getTryCount();
-        getRandomNumber();
+        userInput();
     }
 }
 
