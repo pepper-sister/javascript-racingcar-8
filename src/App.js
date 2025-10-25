@@ -4,9 +4,13 @@ import printWinners from './print/printWinners.js';
 
 class App {
     async run() {
-        const { carArray, tryCount } = await userInput();
-        const race = await carRace(carArray, tryCount);
-        printWinners(race);
+        try {
+            const { carArray, tryCount } = await userInput();
+            const race = await carRace(carArray, tryCount);
+            printWinners(race);
+        } catch (error) {
+            throw new Error(`[ERROR]: ${error.message}`);
+        }
     }
 }
 
