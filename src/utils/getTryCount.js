@@ -1,7 +1,8 @@
 import { Console } from '@woowacourse/mission-utils';
+import { INPUT_TRY_COUNT } from '../constants/message.js';
 
 export default async function getTryCount() {
-    const tryCount = Number(await Console.readLineAsync('시도할 횟수는 몇 회인가요?\n'));
+    const tryCount = Number(await Console.readLineAsync(INPUT_TRY_COUNT));
 
     return tryCount;
 }
